@@ -112,826 +112,808 @@
       </div>
     </nav>
 
-
-    <div class="container-lg container-main d-flex position-relative">
+    <div class="container-lg container-main d-flex position-relative flex-wrap">
 
 			<nav 
-				class="sidebar-nav col-lg-3 me-4 p-3 navbar navbar-expand-lg flex-column justify-content-start align-items-stretch h-100"
+				class="sidebar-nav me-lg-4 p-3 navbar navbar-expand flex-column justify-content-start align-items-stretch h-100 w-100 w-lg-25"
 			>
-	
-					<button class="navbar-toggler align-self-start" type="button" data-bs-toggle="offcanvas" data-bs-target="#proofs-navbar" aria-controls="proofs-navbar"
-						title="Open Snippets Menu"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-	
-					<div class="offcanvas offcanvas-start" tabindex="-1" id="proofs-navbar" aria-labelledby="snippetsMenuLabel">
-						<div class="offcanvas-header">
-							<h5 class="offcanvas-title text-dark" id="snippetsMenuLabel">Snippets Menu</h5>
-								<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-						</div>
-						<div class="offcanvas-body pt-0">
-								
-							<ul class="list-unstyled navbar-nav ps-0 flex-column justify-content-start w-100" role="navigation">
-								<li id="li-basics nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#basics-collapse"
-										aria-expanded="true"
+				<ul class="list-unstyled navbar-nav ps-0 flex-column justify-content-start w-100" role="navigation">
+					<li id="li-basics" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#basics-collapse"
+							aria-expanded="true"
+						>
+							Basics
+						</button>
+						<div class="collapse show" id="basics-collapse">
+							<ul
+								id="list-basics"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-basics-screen">
+									<a
+										href="https://snippets.haxeflixel.com/basics/screen"
+										class="link-dark rounded active"
+										>Screen</a
 									>
-										Basics
-									</button>
-									<div class="collapse show" id="basics-collapse">
-										<ul
-											id="list-basics"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-basics-screen">
-												<a
-													href="https://snippets.haxeflixel.com/basics/screen"
-													class="link-dark rounded active"
-													>Screen</a
-												>
-											</li>
-					
-											<li id="li-basics-adding">
-												<a
-													href="https://snippets.haxeflixel.com/basics/adding"
-													class="link-dark rounded"
-													>Adding</a
-												>
-											</li>
-										</ul>
-									</div>
 								</li>
-					
-								<li id="li-objects nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#objects-collapse"
+		
+								<li id="li-basics-adding">
+									<a
+										href="https://snippets.haxeflixel.com/basics/adding"
+										class="link-dark rounded"
+										>Adding</a
 									>
-										Objects
-									</button>
-									<div class="collapse" id="objects-collapse">
-										<ul
-											id="list-objects"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-objects-alive">
-												<a
-													href="https://snippets.haxeflixel.com/objects/alive"
-													class="link-dark rounded"
-													>Alive</a
-												>
-											</li>
-					
-											<li id="li-objects-health">
-												<a
-													href="https://snippets.haxeflixel.com/objects/health"
-													class="link-dark rounded"
-													>Health</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-sprites nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#sprites-collapse"
-									>
-										Sprites
-									</button>
-									<div class="collapse" id="sprites-collapse">
-										<ul
-											id="list-sprites"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-sprites-making-sprites">
-												<a
-													href="https://snippets.haxeflixel.com/sprites/making-sprites"
-													class="link-dark rounded"
-													>Making Sprites</a
-												>
-											</li>
-					
-											<li id="li-sprites-loading-sprites">
-												<a
-													href="https://snippets.haxeflixel.com/sprites/loading-sprites"
-													class="link-dark rounded"
-													>Loading Sprites</a
-												>
-											</li>
-					
-											<li id="li-sprites-animation">
-												<a
-													href="https://snippets.haxeflixel.com/sprites/animation"
-													class="link-dark rounded"
-													>Animation</a
-												>
-											</li>
-					
-											<li id="li-sprites-alpha">
-												<a
-													href="https://snippets.haxeflixel.com/sprites/alpha"
-													class="link-dark rounded"
-													>Alpha</a
-												>
-											</li>
-					
-											<li id="li-sprites-color">
-												<a
-													href="https://snippets.haxeflixel.com/sprites/color"
-													class="link-dark rounded"
-													>Color</a
-												>
-											</li>
-					
-											<li id="li-sprites-facing">
-												<a
-													href="https://snippets.haxeflixel.com/sprites/facing"
-													class="link-dark rounded"
-													>Facing</a
-												>
-											</li>
-					
-											<li id="li-sprites-scale">
-												<a
-													href="https://snippets.haxeflixel.com/sprites/scale"
-													class="link-dark rounded"
-													>Scale</a
-												>
-											</li>
-					
-											<li id="li-sprites-baked-rotations">
-												<a
-													href="https://snippets.haxeflixel.com/sprites/baked-rotations"
-													class="link-dark rounded"
-													>Baked Rotations</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-text nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#text-collapse"
-									>
-										Text
-									</button>
-									<div class="collapse" id="text-collapse">
-										<ul
-											id="list-text"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-text-flxtext">
-												<a
-													href="https://snippets.haxeflixel.com/text/flxtext"
-													class="link-dark rounded"
-													>FlxText</a
-												>
-											</li>
-					
-											<li id="li-text-flxbitmaptext">
-												<a
-													href="https://snippets.haxeflixel.com/text/flxbitmaptext"
-													class="link-dark rounded"
-													>FlxBitmapText</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-movement nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#movement-collapse"
-									>
-										Movement
-									</button>
-									<div class="collapse" id="movement-collapse">
-										<ul
-											id="list-movement"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-movement-velocity">
-												<a
-													href="https://snippets.haxeflixel.com/movement/velocity"
-													class="link-dark rounded"
-													>Velocity</a
-												>
-											</li>
-					
-											<li id="li-movement-acceleration">
-												<a
-													href="https://snippets.haxeflixel.com/movement/acceleration"
-													class="link-dark rounded"
-													>Acceleration</a
-												>
-											</li>
-					
-											<li id="li-movement-maxvelocity">
-												<a
-													href="https://snippets.haxeflixel.com/movement/maxvelocity"
-													class="link-dark rounded"
-													>MaxVelocity</a
-												>
-											</li>
-					
-											<li id="li-movement-gravity">
-												<a
-													href="https://snippets.haxeflixel.com/movement/gravity"
-													class="link-dark rounded"
-													>Gravity</a
-												>
-											</li>
-					
-											<li id="li-movement-jumping">
-												<a
-													href="https://snippets.haxeflixel.com/movement/jumping"
-													class="link-dark rounded"
-													>Jumping</a
-												>
-											</li>
-					
-											<li id="li-movement-angle">
-												<a
-													href="https://snippets.haxeflixel.com/movement/angle"
-													class="link-dark rounded"
-													>Angle</a
-												>
-											</li>
-					
-											<li id="li-movement-angular-velocity">
-												<a
-													href="https://snippets.haxeflixel.com/movement/angular-velocity"
-													class="link-dark rounded"
-													>Angular Velocity</a
-												>
-											</li>
-					
-											<li id="li-movement-angular-acceleration">
-												<a
-													href="https://snippets.haxeflixel.com/movement/angular-acceleration"
-													class="link-dark rounded"
-													>Angular Acceleration</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-groups nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#groups-collapse"
-									>
-										Groups
-									</button>
-									<div class="collapse" id="groups-collapse">
-										<ul
-											id="list-groups"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-groups-basic-group">
-												<a
-													href="https://snippets.haxeflixel.com/groups/basic-group"
-													class="link-dark rounded"
-													>Basic Group</a
-												>
-											</li>
-					
-											<li id="li-groups-typed-group">
-												<a
-													href="https://snippets.haxeflixel.com/groups/typed-group"
-													class="link-dark rounded"
-													>Typed Group</a
-												>
-											</li>
-					
-											<li id="li-groups-recycling">
-												<a
-													href="https://snippets.haxeflixel.com/groups/recycling"
-													class="link-dark rounded"
-													>Recycling</a
-												>
-											</li>
-					
-											<li id="li-groups-sorting">
-												<a
-													href="https://snippets.haxeflixel.com/groups/sorting"
-													class="link-dark rounded"
-													>Sorting</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-tiles nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#tiles-collapse"
-									>
-										Tiles
-									</button>
-									<div class="collapse" id="tiles-collapse">
-										<ul
-											id="list-tiles"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-tiles-tileblock">
-												<a
-													href="https://snippets.haxeflixel.com/tiles/tileblock"
-													class="link-dark rounded"
-													>Tileblock</a
-												>
-											</li>
-					
-											<li id="li-tiles-tilemap">
-												<a
-													href="https://snippets.haxeflixel.com/tiles/tilemap"
-													class="link-dark rounded"
-													>Tilemap</a
-												>
-											</li>
-					
-											<li id="li-tiles-ray">
-												<a
-													href="https://snippets.haxeflixel.com/tiles/ray"
-													class="link-dark rounded"
-													>Ray</a
-												>
-											</li>
-					
-											<li id="li-tiles-tileproperties">
-												<a
-													href="https://snippets.haxeflixel.com/tiles/tileproperties"
-													class="link-dark rounded"
-													>tileProperties</a
-												>
-											</li>
-					
-											<li id="li-tiles-autotiles">
-												<a
-													href="https://snippets.haxeflixel.com/tiles/autotiles"
-													class="link-dark rounded"
-													>Autotiles</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-overlap nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#overlap-collapse"
-									>
-										Overlap
-									</button>
-									<div class="collapse" id="overlap-collapse">
-										<ul
-											id="list-overlap"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-overlap-simple-overlap">
-												<a
-													href="https://snippets.haxeflixel.com/overlap/simple-overlap"
-													class="link-dark rounded"
-													>Simple Overlap</a
-												>
-											</li>
-					
-											<li id="li-overlap-overlap-callbacks">
-												<a
-													href="https://snippets.haxeflixel.com/overlap/overlap-callbacks"
-													class="link-dark rounded"
-													>Overlap Callbacks</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-collision nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#collision-collapse"
-									>
-										Collision
-									</button>
-									<div class="collapse" id="collision-collapse">
-										<ul
-											id="list-collision"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-collision-1-to-1-collision">
-												<a
-													href="https://snippets.haxeflixel.com/collision/1-to-1-collision"
-													class="link-dark rounded"
-													>1-to-1 Collision</a
-												>
-											</li>
-					
-											<li id="li-collision-immovable">
-												<a
-													href="https://snippets.haxeflixel.com/collision/immovable"
-													class="link-dark rounded"
-													>Immovable</a
-												>
-											</li>
-					
-											<li id="li-collision-tilemap-collision">
-												<a
-													href="https://snippets.haxeflixel.com/collision/tilemap-collision"
-													class="link-dark rounded"
-													>Tilemap Collision</a
-												>
-											</li>
-					
-											<li id="li-collision-moving-platforms">
-												<a
-													href="https://snippets.haxeflixel.com/collision/moving-platforms"
-													class="link-dark rounded"
-													>Moving Platforms</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-camera nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#camera-collapse"
-									>
-										Camera
-									</button>
-									<div class="collapse" id="camera-collapse">
-										<ul
-											id="list-camera"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-camera-flash">
-												<a
-													href="https://snippets.haxeflixel.com/camera/flash"
-													class="link-dark rounded"
-													>Flash</a
-												>
-											</li>
-					
-											<li id="li-camera-fade">
-												<a
-													href="https://snippets.haxeflixel.com/camera/fade"
-													class="link-dark rounded"
-													>Fade</a
-												>
-											</li>
-					
-											<li id="li-camera-shake">
-												<a
-													href="https://snippets.haxeflixel.com/camera/shake"
-													class="link-dark rounded"
-													>Shake</a
-												>
-											</li>
-					
-											<li id="li-camera-follow">
-												<a
-													href="https://snippets.haxeflixel.com/camera/follow"
-													class="link-dark rounded"
-													>Follow</a
-												>
-											</li>
-					
-											<li id="li-camera-scrollfactor">
-												<a
-													href="https://snippets.haxeflixel.com/camera/scrollfactor"
-													class="link-dark rounded"
-													>scrollFactor</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-input nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#input-collapse"
-									>
-										Input
-									</button>
-									<div class="collapse" id="input-collapse">
-										<ul
-											id="list-input"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-input-basics">
-												<a
-													href="https://snippets.haxeflixel.com/input/basics"
-													class="link-dark rounded"
-													>Basics</a
-												>
-											</li>
-					
-											<li id="li-input-keyboard">
-												<a
-													href="https://snippets.haxeflixel.com/input/keyboard"
-													class="link-dark rounded"
-													>Keyboard</a
-												>
-											</li>
-					
-											<li id="li-input-gamepad">
-												<a
-													href="https://snippets.haxeflixel.com/input/gamepad"
-													class="link-dark rounded"
-													>Gamepad</a
-												>
-											</li>
-					
-											<li id="li-input-mouse">
-												<a
-													href="https://snippets.haxeflixel.com/input/mouse"
-													class="link-dark rounded"
-													>Mouse</a
-												>
-											</li>
-					
-											<li id="li-input-button">
-												<a
-													href="https://snippets.haxeflixel.com/input/button"
-													class="link-dark rounded"
-													>Button</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-sound nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#sound-collapse"
-									>
-										Sound
-									</button>
-									<div class="collapse" id="sound-collapse">
-										<ul
-											id="list-sound"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-sound-flxsound">
-												<a
-													href="https://snippets.haxeflixel.com/sound/flxsound"
-													class="link-dark rounded"
-													>FlxSound</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-states nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#states-collapse"
-									>
-										States
-									</button>
-									<div class="collapse" id="states-collapse">
-										<ul
-											id="list-states"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-states-flxstate">
-												<a
-													href="https://snippets.haxeflixel.com/states/flxstate"
-													class="link-dark rounded"
-													>FlxState</a
-												>
-											</li>
-					
-											<li id="li-states-flxsubstate">
-												<a
-													href="https://snippets.haxeflixel.com/states/flxsubstate"
-													class="link-dark rounded"
-													>FlxSubState</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-tweens nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#tweens-collapse"
-									>
-										Tweens
-									</button>
-									<div class="collapse" id="tweens-collapse">
-										<ul
-											id="list-tweens"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-tweens-tween">
-												<a
-													href="https://snippets.haxeflixel.com/tweens/tween"
-													class="link-dark rounded"
-													>Tween</a
-												>
-											</li>
-					
-											<li id="li-tweens-angle">
-												<a
-													href="https://snippets.haxeflixel.com/tweens/angle"
-													class="link-dark rounded"
-													>Angle</a
-												>
-											</li>
-					
-											<li id="li-tweens-color">
-												<a
-													href="https://snippets.haxeflixel.com/tweens/color"
-													class="link-dark rounded"
-													>Color</a
-												>
-											</li>
-					
-											<li id="li-tweens-motion">
-												<a
-													href="https://snippets.haxeflixel.com/tweens/motion"
-													class="link-dark rounded"
-													>Motion</a
-												>
-											</li>
-					
-											<li id="li-tweens-num">
-												<a
-													href="https://snippets.haxeflixel.com/tweens/num"
-													class="link-dark rounded"
-													>Num</a
-												>
-											</li>
-					
-											<li id="li-tweens-callbacks">
-												<a
-													href="https://snippets.haxeflixel.com/tweens/callbacks"
-													class="link-dark rounded"
-													>Callbacks</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-timing nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#timing-collapse"
-									>
-										Timing
-									</button>
-									<div class="collapse" id="timing-collapse">
-										<ul
-											id="list-timing"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-timing-flxtimer">
-												<a
-													href="https://snippets.haxeflixel.com/timing/flxtimer"
-													class="link-dark rounded"
-													>FlxTimer</a
-												>
-											</li>
-					
-											<li id="li-timing-flxsignal">
-												<a
-													href="https://snippets.haxeflixel.com/timing/flxsignal"
-													class="link-dark rounded"
-													>FlxSignal</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-math nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#math-collapse"
-									>
-										Math
-									</button>
-									<div class="collapse" id="math-collapse">
-										<ul
-											id="list-math"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-math-movetowards">
-												<a
-													href="https://snippets.haxeflixel.com/math/movetowards"
-													class="link-dark rounded"
-													>moveTowards</a
-												>
-											</li>
-					
-											<li id="li-math-distance">
-												<a
-													href="https://snippets.haxeflixel.com/math/distance"
-													class="link-dark rounded"
-													>Distance</a
-												>
-											</li>
-					
-											<li id="li-math-velocityfromangle">
-												<a
-													href="https://snippets.haxeflixel.com/math/velocityfromangle"
-													class="link-dark rounded"
-													>velocityFromAngle</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-advanced nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#advanced-collapse"
-									>
-										Advanced
-									</button>
-									<div class="collapse" id="advanced-collapse">
-										<ul
-											id="list-advanced"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-advanced-timescale">
-												<a
-													href="https://snippets.haxeflixel.com/advanced/timescale"
-													class="link-dark rounded"
-													>timeScale</a
-												>
-											</li>
-										</ul>
-									</div>
-								</li>
-					
-								<li id="li-drawing nav-item" class="mb-1">
-									<button
-										class="btn btn-toggle align-items-center rounded"
-										data-bs-toggle="collapse"
-										data-bs-target="#drawing-collapse"
-									>
-										Drawing
-									</button>
-									<div class="collapse" id="drawing-collapse">
-										<ul
-											id="list-drawing"
-											class="btn-toggle-nav list-unstyled fw-normal pb-1"
-										>
-											<li id="li-drawing-drawline">
-												<a
-													href="https://snippets.haxeflixel.com/drawing/drawline"
-													class="link-dark rounded"
-													>drawLine</a
-												>
-											</li>
-										</ul>
-									</div>
 								</li>
 							</ul>
-		
 						</div>
-					</div>
-				</nav>
+					</li>
+		
+					<li id="li-objects" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#objects-collapse"
+						>
+							Objects
+						</button>
+						<div class="collapse" id="objects-collapse">
+							<ul
+								id="list-objects"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-objects-alive">
+									<a
+										href="https://snippets.haxeflixel.com/objects/alive"
+										class="link-dark rounded"
+										>Alive</a
+									>
+								</li>
+		
+								<li id="li-objects-health">
+									<a
+										href="https://snippets.haxeflixel.com/objects/health"
+										class="link-dark rounded"
+										>Health</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-sprites" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#sprites-collapse"
+						>
+							Sprites
+						</button>
+						<div class="collapse" id="sprites-collapse">
+							<ul
+								id="list-sprites"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-sprites-making-sprites">
+									<a
+										href="https://snippets.haxeflixel.com/sprites/making-sprites"
+										class="link-dark rounded"
+										>Making Sprites</a
+									>
+								</li>
+		
+								<li id="li-sprites-loading-sprites">
+									<a
+										href="https://snippets.haxeflixel.com/sprites/loading-sprites"
+										class="link-dark rounded"
+										>Loading Sprites</a
+									>
+								</li>
+		
+								<li id="li-sprites-animation">
+									<a
+										href="https://snippets.haxeflixel.com/sprites/animation"
+										class="link-dark rounded"
+										>Animation</a
+									>
+								</li>
+		
+								<li id="li-sprites-alpha">
+									<a
+										href="https://snippets.haxeflixel.com/sprites/alpha"
+										class="link-dark rounded"
+										>Alpha</a
+									>
+								</li>
+		
+								<li id="li-sprites-color">
+									<a
+										href="https://snippets.haxeflixel.com/sprites/color"
+										class="link-dark rounded"
+										>Color</a
+									>
+								</li>
+		
+								<li id="li-sprites-facing">
+									<a
+										href="https://snippets.haxeflixel.com/sprites/facing"
+										class="link-dark rounded"
+										>Facing</a
+									>
+								</li>
+		
+								<li id="li-sprites-scale">
+									<a
+										href="https://snippets.haxeflixel.com/sprites/scale"
+										class="link-dark rounded"
+										>Scale</a
+									>
+								</li>
+		
+								<li id="li-sprites-baked-rotations">
+									<a
+										href="https://snippets.haxeflixel.com/sprites/baked-rotations"
+										class="link-dark rounded"
+										>Baked Rotations</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-text" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#text-collapse"
+						>
+							Text
+						</button>
+						<div class="collapse" id="text-collapse">
+							<ul
+								id="list-text"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-text-flxtext">
+									<a
+										href="https://snippets.haxeflixel.com/text/flxtext"
+										class="link-dark rounded"
+										>FlxText</a
+									>
+								</li>
+		
+								<li id="li-text-flxbitmaptext">
+									<a
+										href="https://snippets.haxeflixel.com/text/flxbitmaptext"
+										class="link-dark rounded"
+										>FlxBitmapText</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-movement" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#movement-collapse"
+						>
+							Movement
+						</button>
+						<div class="collapse" id="movement-collapse">
+							<ul
+								id="list-movement"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-movement-velocity">
+									<a
+										href="https://snippets.haxeflixel.com/movement/velocity"
+										class="link-dark rounded"
+										>Velocity</a
+									>
+								</li>
+		
+								<li id="li-movement-acceleration">
+									<a
+										href="https://snippets.haxeflixel.com/movement/acceleration"
+										class="link-dark rounded"
+										>Acceleration</a
+									>
+								</li>
+		
+								<li id="li-movement-maxvelocity">
+									<a
+										href="https://snippets.haxeflixel.com/movement/maxvelocity"
+										class="link-dark rounded"
+										>MaxVelocity</a
+									>
+								</li>
+		
+								<li id="li-movement-gravity">
+									<a
+										href="https://snippets.haxeflixel.com/movement/gravity"
+										class="link-dark rounded"
+										>Gravity</a
+									>
+								</li>
+		
+								<li id="li-movement-jumping">
+									<a
+										href="https://snippets.haxeflixel.com/movement/jumping"
+										class="link-dark rounded"
+										>Jumping</a
+									>
+								</li>
+		
+								<li id="li-movement-angle">
+									<a
+										href="https://snippets.haxeflixel.com/movement/angle"
+										class="link-dark rounded"
+										>Angle</a
+									>
+								</li>
+		
+								<li id="li-movement-angular-velocity">
+									<a
+										href="https://snippets.haxeflixel.com/movement/angular-velocity"
+										class="link-dark rounded"
+										>Angular Velocity</a
+									>
+								</li>
+		
+								<li id="li-movement-angular-acceleration">
+									<a
+										href="https://snippets.haxeflixel.com/movement/angular-acceleration"
+										class="link-dark rounded"
+										>Angular Acceleration</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-groups" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#groups-collapse"
+						>
+							Groups
+						</button>
+						<div class="collapse" id="groups-collapse">
+							<ul
+								id="list-groups"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-groups-basic-group">
+									<a
+										href="https://snippets.haxeflixel.com/groups/basic-group"
+										class="link-dark rounded"
+										>Basic Group</a
+									>
+								</li>
+		
+								<li id="li-groups-typed-group">
+									<a
+										href="https://snippets.haxeflixel.com/groups/typed-group"
+										class="link-dark rounded"
+										>Typed Group</a
+									>
+								</li>
+		
+								<li id="li-groups-recycling">
+									<a
+										href="https://snippets.haxeflixel.com/groups/recycling"
+										class="link-dark rounded"
+										>Recycling</a
+									>
+								</li>
+		
+								<li id="li-groups-sorting">
+									<a
+										href="https://snippets.haxeflixel.com/groups/sorting"
+										class="link-dark rounded"
+										>Sorting</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-tiles" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#tiles-collapse"
+						>
+							Tiles
+						</button>
+						<div class="collapse" id="tiles-collapse">
+							<ul
+								id="list-tiles"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-tiles-tileblock">
+									<a
+										href="https://snippets.haxeflixel.com/tiles/tileblock"
+										class="link-dark rounded"
+										>Tileblock</a
+									>
+								</li>
+		
+								<li id="li-tiles-tilemap">
+									<a
+										href="https://snippets.haxeflixel.com/tiles/tilemap"
+										class="link-dark rounded"
+										>Tilemap</a
+									>
+								</li>
+		
+								<li id="li-tiles-ray">
+									<a
+										href="https://snippets.haxeflixel.com/tiles/ray"
+										class="link-dark rounded"
+										>Ray</a
+									>
+								</li>
+		
+								<li id="li-tiles-tileproperties">
+									<a
+										href="https://snippets.haxeflixel.com/tiles/tileproperties"
+										class="link-dark rounded"
+										>tileProperties</a
+									>
+								</li>
+		
+								<li id="li-tiles-autotiles">
+									<a
+										href="https://snippets.haxeflixel.com/tiles/autotiles"
+										class="link-dark rounded"
+										>Autotiles</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-overlap" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#overlap-collapse"
+						>
+							Overlap
+						</button>
+						<div class="collapse" id="overlap-collapse">
+							<ul
+								id="list-overlap"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-overlap-simple-overlap">
+									<a
+										href="https://snippets.haxeflixel.com/overlap/simple-overlap"
+										class="link-dark rounded"
+										>Simple Overlap</a
+									>
+								</li>
+		
+								<li id="li-overlap-overlap-callbacks">
+									<a
+										href="https://snippets.haxeflixel.com/overlap/overlap-callbacks"
+										class="link-dark rounded"
+										>Overlap Callbacks</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-collision" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#collision-collapse"
+						>
+							Collision
+						</button>
+						<div class="collapse" id="collision-collapse">
+							<ul
+								id="list-collision"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-collision-1-to-1-collision">
+									<a
+										href="https://snippets.haxeflixel.com/collision/1-to-1-collision"
+										class="link-dark rounded"
+										>1-to-1 Collision</a
+									>
+								</li>
+		
+								<li id="li-collision-immovable">
+									<a
+										href="https://snippets.haxeflixel.com/collision/immovable"
+										class="link-dark rounded"
+										>Immovable</a
+									>
+								</li>
+		
+								<li id="li-collision-tilemap-collision">
+									<a
+										href="https://snippets.haxeflixel.com/collision/tilemap-collision"
+										class="link-dark rounded"
+										>Tilemap Collision</a
+									>
+								</li>
+		
+								<li id="li-collision-moving-platforms">
+									<a
+										href="https://snippets.haxeflixel.com/collision/moving-platforms"
+										class="link-dark rounded"
+										>Moving Platforms</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-camera" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#camera-collapse"
+						>
+							Camera
+						</button>
+						<div class="collapse" id="camera-collapse">
+							<ul
+								id="list-camera"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-camera-flash">
+									<a
+										href="https://snippets.haxeflixel.com/camera/flash"
+										class="link-dark rounded"
+										>Flash</a
+									>
+								</li>
+		
+								<li id="li-camera-fade">
+									<a
+										href="https://snippets.haxeflixel.com/camera/fade"
+										class="link-dark rounded"
+										>Fade</a
+									>
+								</li>
+		
+								<li id="li-camera-shake">
+									<a
+										href="https://snippets.haxeflixel.com/camera/shake"
+										class="link-dark rounded"
+										>Shake</a
+									>
+								</li>
+		
+								<li id="li-camera-follow">
+									<a
+										href="https://snippets.haxeflixel.com/camera/follow"
+										class="link-dark rounded"
+										>Follow</a
+									>
+								</li>
+		
+								<li id="li-camera-scrollfactor">
+									<a
+										href="https://snippets.haxeflixel.com/camera/scrollfactor"
+										class="link-dark rounded"
+										>scrollFactor</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-input" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#input-collapse"
+						>
+							Input
+						</button>
+						<div class="collapse" id="input-collapse">
+							<ul
+								id="list-input"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-input-basics">
+									<a
+										href="https://snippets.haxeflixel.com/input/basics"
+										class="link-dark rounded"
+										>Basics</a
+									>
+								</li>
+		
+								<li id="li-input-keyboard">
+									<a
+										href="https://snippets.haxeflixel.com/input/keyboard"
+										class="link-dark rounded"
+										>Keyboard</a
+									>
+								</li>
+		
+								<li id="li-input-gamepad">
+									<a
+										href="https://snippets.haxeflixel.com/input/gamepad"
+										class="link-dark rounded"
+										>Gamepad</a
+									>
+								</li>
+		
+								<li id="li-input-mouse">
+									<a
+										href="https://snippets.haxeflixel.com/input/mouse"
+										class="link-dark rounded"
+										>Mouse</a
+									>
+								</li>
+		
+								<li id="li-input-button">
+									<a
+										href="https://snippets.haxeflixel.com/input/button"
+										class="link-dark rounded"
+										>Button</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-sound" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#sound-collapse"
+						>
+							Sound
+						</button>
+						<div class="collapse" id="sound-collapse">
+							<ul
+								id="list-sound"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-sound-flxsound">
+									<a
+										href="https://snippets.haxeflixel.com/sound/flxsound"
+										class="link-dark rounded"
+										>FlxSound</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-states" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#states-collapse"
+						>
+							States
+						</button>
+						<div class="collapse" id="states-collapse">
+							<ul
+								id="list-states"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-states-flxstate">
+									<a
+										href="https://snippets.haxeflixel.com/states/flxstate"
+										class="link-dark rounded"
+										>FlxState</a
+									>
+								</li>
+		
+								<li id="li-states-flxsubstate">
+									<a
+										href="https://snippets.haxeflixel.com/states/flxsubstate"
+										class="link-dark rounded"
+										>FlxSubState</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-tweens" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#tweens-collapse"
+						>
+							Tweens
+						</button>
+						<div class="collapse" id="tweens-collapse">
+							<ul
+								id="list-tweens"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-tweens-tween">
+									<a
+										href="https://snippets.haxeflixel.com/tweens/tween"
+										class="link-dark rounded"
+										>Tween</a
+									>
+								</li>
+		
+								<li id="li-tweens-angle">
+									<a
+										href="https://snippets.haxeflixel.com/tweens/angle"
+										class="link-dark rounded"
+										>Angle</a
+									>
+								</li>
+		
+								<li id="li-tweens-color">
+									<a
+										href="https://snippets.haxeflixel.com/tweens/color"
+										class="link-dark rounded"
+										>Color</a
+									>
+								</li>
+		
+								<li id="li-tweens-motion">
+									<a
+										href="https://snippets.haxeflixel.com/tweens/motion"
+										class="link-dark rounded"
+										>Motion</a
+									>
+								</li>
+		
+								<li id="li-tweens-num">
+									<a
+										href="https://snippets.haxeflixel.com/tweens/num"
+										class="link-dark rounded"
+										>Num</a
+									>
+								</li>
+		
+								<li id="li-tweens-callbacks">
+									<a
+										href="https://snippets.haxeflixel.com/tweens/callbacks"
+										class="link-dark rounded"
+										>Callbacks</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-timing" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#timing-collapse"
+						>
+							Timing
+						</button>
+						<div class="collapse" id="timing-collapse">
+							<ul
+								id="list-timing"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-timing-flxtimer">
+									<a
+										href="https://snippets.haxeflixel.com/timing/flxtimer"
+										class="link-dark rounded"
+										>FlxTimer</a
+									>
+								</li>
+		
+								<li id="li-timing-flxsignal">
+									<a
+										href="https://snippets.haxeflixel.com/timing/flxsignal"
+										class="link-dark rounded"
+										>FlxSignal</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-math" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#math-collapse"
+						>
+							Math
+						</button>
+						<div class="collapse" id="math-collapse">
+							<ul
+								id="list-math"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-math-movetowards">
+									<a
+										href="https://snippets.haxeflixel.com/math/movetowards"
+										class="link-dark rounded"
+										>moveTowards</a
+									>
+								</li>
+		
+								<li id="li-math-distance">
+									<a
+										href="https://snippets.haxeflixel.com/math/distance"
+										class="link-dark rounded"
+										>Distance</a
+									>
+								</li>
+		
+								<li id="li-math-velocityfromangle">
+									<a
+										href="https://snippets.haxeflixel.com/math/velocityfromangle"
+										class="link-dark rounded"
+										>velocityFromAngle</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-advanced" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#advanced-collapse"
+						>
+							Advanced
+						</button>
+						<div class="collapse" id="advanced-collapse">
+							<ul
+								id="list-advanced"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-advanced-timescale">
+									<a
+										href="https://snippets.haxeflixel.com/advanced/timescale"
+										class="link-dark rounded"
+										>timeScale</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+		
+					<li id="li-drawing" class="mb-1 nav-item">
+						<button
+							class="btn btn-toggle align-items-center rounded"
+							data-bs-toggle="collapse"
+							data-bs-target="#drawing-collapse"
+						>
+							Drawing
+						</button>
+						<div class="collapse" id="drawing-collapse">
+							<ul
+								id="list-drawing"
+								class="btn-toggle-nav list-unstyled fw-normal pb-1"
+							>
+								<li id="li-drawing-drawline">
+									<a
+										href="https://snippets.haxeflixel.com/drawing/drawline"
+										class="link-dark rounded"
+										>drawLine</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
 	
-			<main class="col col-lg-9 prevent-wrap-flex-item">
+			<main class="prevent-wrap-flex-item w-100">
 				<div class="page-header">
 					<h1>Screen</h1>
 				</div>

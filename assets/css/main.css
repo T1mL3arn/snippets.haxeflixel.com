@@ -170,7 +170,7 @@ canvas.demo-back {
   border: 2px solid #e3e3e3;
   border-radius: 4px;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-  width:25%;
+  width: 25%;
 }
 
 .sidebar-nav .btn-toggle {
@@ -261,10 +261,6 @@ canvas.demo-back {
   }
 }
 
-main {
-  width: 75%;
-}
-
 .jumbotron {
   border-radius: 6px;
   background-color: #eee;
@@ -342,9 +338,24 @@ figure {
     margin-bottom: 1rem;
 }
 
+@media (max-width: 991px) {
+  .sidebar-nav .navbar-nav {
+    column-count: 2;
+    display: block;
+  }
+}
+
+.sidebar-nav .nav-item {
+  break-inside: avoid;
+}
+
 /* prevent flex item to wrap/overflow, instead it
 fills all remaining spage */
 .prevent-wrap-flex-item {
-  min-width: 0;
+  min-width: 1px;
   flex: 1;
+}
+
+@media (min-width: 992px) {
+  .w-lg-25 { width: 25% !important; }
 }
