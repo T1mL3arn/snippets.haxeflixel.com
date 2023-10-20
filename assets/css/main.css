@@ -30,7 +30,7 @@ body {
   margin-bottom:7px;
 }
 
-.navbar {
+.top-navbar {
   min-height: 50px;
   margin-bottom:22px;
   border: 1px solid transparent;
@@ -219,7 +219,7 @@ canvas.demo-back {
   background-color: transparent;
   font-weight: 400;
   border: 0;
-  width:100%;
+  width: calc(100% - 1.25rem);
 }
 
 .sidebar-nav .btn-toggle-nav a::before {
@@ -248,6 +248,17 @@ canvas.demo-back {
 .sidebar-nav .btn-toggle-nav a:hover, .sidebar-nav .btn-toggle-nav a:focus {
   background-color: #eee;
   box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .sidebar-nav {
+    /* margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    position: absolute;
+    right: 16px; */
+  }
 }
 
 main {
@@ -329,4 +340,11 @@ figure {
     margin: auto;
     background: lightgray;
     margin-bottom: 1rem;
+}
+
+/* prevent flex item to wrap/overflow, instead it
+fills all remaining spage */
+.prevent-wrap-flex-item {
+  min-width: 0;
+  flex: 1;
 }
