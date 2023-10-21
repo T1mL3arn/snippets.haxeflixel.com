@@ -1,7 +1,7 @@
 safe: false
 permalink: pretty
-google-analytics-id: "UA-63717309-1"
-url: https://snippets.haxeflixel.com/
+# google-analytics-id: "UA-63717309-1"
+baseurl: /snippets.haxeflixel.com
 
 markdown: kramdown
 
