@@ -1,8 +1,7 @@
 safe: false
 permalink: pretty
 # google-analytics-id: "UA-63717309-1"
-url: https://t1ml3arn.github.io/snippets.haxeflixel.com/
-baseurl: https://t1ml3arn.github.io/snippets.haxeflixel.com/
+baseurl: /snippets.haxeflixel.com
 
 markdown: kramdown
 
