@@ -10,19 +10,19 @@ task :clean_demos do
   print "Done\n"
 end
 
-desc "Builds all of the demos"
-task :build_demos => [:clean_demos] do
-  puts "Building Demos..."
-  FileUtils.rm_r(Dir.glob('_site/demos/**'))
-  FileUtils.rm_r(Dir.glob('_site/title-logo'))
-  results, error, status = Open3.capture3("haxelib", "run", "flixel-tools", "buildprojects", "html5", "-dir", ".", "--", "-final")
-  puts results
-  if !status.success?
-    puts "ERROR! - #{error}"
-    exit 1
-  end
-  puts "Done";
-end
+# desc "Builds all of the demos"
+# task :build_demos => [:clean_demos] do
+#   puts "Building Demos..."
+#   FileUtils.rm_r(Dir.glob('_site/demos/**'))
+#   FileUtils.rm_r(Dir.glob('_site/title-logo'))
+#   results, error, status = Open3.capture3("haxelib", "run", "flixel-tools", "buildprojects", "html5", "-dir", ".", "--", "-final")
+#   puts results
+#   if !status.success?
+#     puts "ERROR! - #{error}"
+#     exit 1
+#   end
+#   puts "Done";
+# end
 
 desc "Build the site with Jekyll"
 task :build_site do
