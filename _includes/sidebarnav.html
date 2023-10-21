@@ -11,7 +11,7 @@
                         {% assign proofs = site.proofs | where:"concept",concept.title | sort: 'order' %}
                         {% for proof in proofs %}
                             <li id="li-{{proof.concept | slugify }}-{{ proof.title | slugify }}">
-                                <a href="/{{ proof.concept | slugify }}/{{ proof.title | slugify }}" class="link-dark rounded {% if page.title == proof.title %} active{% endif %}">{{ proof.title }}</a>
+                                <a href="{{ /{{ proof.concept | slugify }}/{{ proof.title | slugify }} | relative_url }}" class="link-dark rounded {% if page.title == proof.title %} active{% endif %}">{{ proof.title }}</a>
                             </li>
                         {% endfor %}
                     </ul>
